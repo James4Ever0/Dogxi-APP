@@ -1,8 +1,3 @@
-<?php
-if(isset($_COOKIE['id'])){
-    header ("Refresh:0;url=admin.php");
-}
-?>
 <html>
     <head>
     <meta charset="utf-8">
@@ -10,7 +5,7 @@ if(isset($_COOKIE['id'])){
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>葫芦侠3L-Dogxi</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="./css/dogxi.css" rel="stylesheet">
+    <link href="https://dogxi.cn/hlx/css/dogxi.css" rel="stylesheet">
     </head>
   <body>
     <div class="container">
