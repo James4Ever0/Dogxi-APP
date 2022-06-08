@@ -1,0 +1,1 @@
+(function hitokoto(){var hitokoto="我还在原地等你 你却已经忘记来过这里";var dom=document.querySelector('#hitokoto');Array.isArray(dom)?dom[0].innerText=hitokoto:dom.innerText=hitokoto;})()

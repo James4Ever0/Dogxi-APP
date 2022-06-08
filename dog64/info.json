@@ -1,0 +1,197 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.wang/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "http://www.jsons.cn/base64/",
+            "path": "index.html",
+            "saved": true,
+            "size": 42535,
+            "children": [
+                {
+                    "url": "https://s11.cnzz.com/z_stat.php?id=1261004054&web_id=1261004054",
+                    "saved": false
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/js/jquery-1.11.3.min.js?20190731",
+                    "path": "js/jquery-1.11.3.min.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/js/bootstrap3.5min.js",
+                    "path": "js/bootstrap3.5min.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/js/FileSave.js",
+                    "path": "js/FileSave.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/js/clipboard.min.js",
+                    "path": "js/clipboard.min.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/js/mainjs.js?201907142041",
+                    "path": "js/mainjs.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/js/pjs/core-min.js",
+                    "path": "js/core-min.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/js/pjs/base64csvtojson.js",
+                    "path": "js/base64csvtojson.js",
+                    "saved": true,
+                    "size": 3849,
+                    "children": []
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/css/bootstrap3.5min.css",
+                    "path": "css/bootstrap3.5min.css",
+                    "saved": true,
+                    "size": 122542,
+                    "children": [
+                        {
+                            "url": "http://www.jsons.cn/Style/fonts/glyphicons-halflings-regular.eot",
+                            "path": "fonts/glyphicons-halflings-regular.eot",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "http://www.jsons.cn/Style/fonts/glyphicons-halflings-regular.woff2",
+                            "path": "fonts/glyphicons-halflings-regular.woff2",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "http://www.jsons.cn/Style/fonts/glyphicons-halflings-regular.woff",
+                            "path": "fonts/glyphicons-halflings-regular.woff",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "http://www.jsons.cn/Style/fonts/glyphicons-halflings-regular.ttf",
+                            "path": "fonts/glyphicons-halflings-regular.ttf",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "http://www.jsons.cn/Style/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular",
+                            "path": "img/glyphicons-halflings-regular.svg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "url": "http://www.jsons.cn/Style/css/mainmin.css?201911071945",
+                    "path": "css/mainmin.css",
+                    "saved": true,
+                    "size": 14605,
+                    "children": [
+                        {
+                            "url": "http://www.jsons.cn/Style/images/search.png",
+                            "path": "img/search.png",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "http://www.jsons.cn/Style/images/logo_old.png?1",
+                            "path": "img/logo_old.png",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "url": "http://www.jsons.cn/favicon.ico",
+                    "path": "favicon.ico",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "alias": "www-jsons-cn-atrhxsn",
+    "info": {
+        "remark": [],
+        "title": "Base64在线加密解密-在线Base64加密解密工具-Base64编码解码工具",
+        "domain": "www.jsons.cn",
+        "origin": "http://www.jsons.cn",
+        "ip": "43.132.184.14",
+        "main": "index.html",
+        "url": "http://www.jsons.cn/base64/",
+        "totalSize": "184 kB",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "http://www.jsons.cn/base64/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.wang/"
+            }
+        },
+        "response": {
+            "responseUrl": "http://www.jsons.cn/base64/",
+            "redirects": [],
+            "statusCode": 200,
+            "headers": {
+                "server": "nginx",
+                "date": "Sat, 04 Jun 2022 02:43:49 GMT",
+                "content-type": "text/html; charset=utf-8",
+                "content-length": "48079",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "cache-control": "private",
+                "set-cookie": [
+                    "ASP.NET_SessionId=p2tdash4xc3cdxn3b5lwrdhy; path=/; HttpOnly; SameSite=Lax"
+                ],
+                "x-aspnet-version": "4.0.30319",
+                "x-powered-by": "ASP.NET"
+            }
+        },
+        "time": {
+            "start": "2022-06-04T02:43:48.523Z",
+            "end": "2022-06-04T02:43:51.822Z"
+        }
+    },
+    "options": {
+        "url": "http://www.jsons.cn/base64/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "formatter": [],
+        "filenameGenerator": "byType"
+    }
+}

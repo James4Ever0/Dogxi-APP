@@ -1,0 +1,68 @@
+<html><head>
+       <meta charset="UTF-8">
+        <meta name="Author" content="kk">
+        <meta name="Keywords" content="kk520">
+        <meta name="Description" content=" ">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <title>蔡徐坤邀请您微信通话</title>
+      <meta name="description" content="蔡徐坤邀请您微信通话">
+	  	  <style type="text/css">
+
+			html,body{
+				height: 100%;
+				margin: 0;
+                background-color: #e3e9f5;
+			}
+			#container{
+				height: 100%;
+				background: url('https://cdn.u1.huluxia.com/g3/M01/FD/A1/wKgBOV4vqYWAKSE1AANeV12lXyY462.jpg') no-repeat top center/100% 100%;
+			}
+            #jntm{
+                display: none;
+            }
+
+        	audio,#jntm_music{
+        		display: none;
+        	}
+
+</style>
+    </head>
+    <body>
+    	<div id="container">
+            <audio id="wx_music" src="cxkdh.mp3" controls="" loop="" autoplay=""></audio>
+    	</div>
+        <div id="jntm">
+            
+        </div>
+        <!-- <audio controls loop="loop" id="play" autoplay="true">
+            <source src="music.mp3" type="video/mpeg">
+			<source src="music.m4a" type="video/mpeg">
+			<source src="music.ogg" type="video/ogg">
+		</audio> -->
+
+		<script>
+			var ele = document.getElementById("wx_music");
+			ele.addEventListener('canplay',function(){
+				setTimeout(function(){
+					ele.play();
+				},500);
+			})
+
+            document.getElementById("container").onclick = function(){
+		ele.pause();
+                this.removeChild( ele );
+                this.style.display = "none";
+
+                var jntm = document.getElementById("jntm");
+
+                jntm.style.display = "block";
+
+                jntm.innerHTML = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="cxk.mp3"></iframe>'+
+                    '<a href="http://dogxi.cn"><img src="https://cdn.u1.huluxia.com/g3/M01/CE/2C/wKgBOV4VsWyAB9cMAAtAhfXnV4g3012.no" width="100%"></a>'+'<a href="http://dogxi.cn"><img src="https://cdn.u1.huluxia.com/g3/M01/CE/2D/wKgBOV4VsYuAZmzwAABZNVj4b1o023.jpg" width="100%"></a>'+'<a href="http://dogxi.cn"><img src="https://cdn.u1.huluxia.com/g3/M01/CE/2D/wKgBOV4VsbGAP-GsAAAzQkNWSmY338.jpg" width="100%"></a>'+'<a href="http://dogxi.cn"><img src="https://cdn.u1.huluxia.com/g3/M01/CE/2D/wKgBOV4Vse6ATzUnAAFUpCvmkYw473.jpg" width="100%"></a>'+'<a href="http://dogxi.cn"><img src="https://cdn.u1.huluxia.com/g3/M01/CE/2E/wKgBOV4VsgmAfUxzAAIGChWfzwg038.png" width="100%"></a>';
+            };
+		</script>
+
+
+
+</body></html>

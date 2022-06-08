@@ -1,0 +1,149 @@
+<!DOCTYPE html><!--狗子xi狗子xi-->
+<html lang="zh-cn"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dogxi-查Q绑</title>
+<meta name="keywords" content="查Q绑">
+<meta name="description" content="在线Q绑查询 输入qq号即可查询">
+<link rel="shortcut icon" href="../icon/aaa.ico">
+<link href="//lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="//lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="//lib.baomitu.com/layer/3.1.1/layer.js"></script>
+<link rel="stylesheet" href="//lib.baomitu.com/layer/3.1.1/theme/default/layer.css?v=3.1.1" id="layuicss-layer">
+<script>
+    function gg(){
+    layer.alert('网站仅用于学习参考!<br/>另外不是所有的QQ都可以查出来，<br/>没有就是没有泄露！<br/><a href="https://wpa.qq.com/msgrd?v=3&amp;uin=1706328818&amp;site=qq&amp;menu=yes">@狗子xi qq1706328818</a>', {
+  icon: 1,
+  title: '公告',
+  skin: 'layer-ext-moon'
+}
+)
+}
+</script>
+<style type="text/css">
+    @media only screen and (max-width: 640px) {
+  body {
+    background-image: url('../tc/image/wife2.png');
+    background-size: 100%;
+    background-attachment:fixed|scroll;
+  }
+  .container{
+      opacity:0.75;
+  }
+}
+    @media only screen and (min-width: 640px) {
+  body {
+     background-image: url('../tc/image/wife2.png');
+     background-size: 55%;
+    background-repeat: repeat;
+    background-attachment:fixed|scroll;
+  }
+}
+</style>
+</head>
+<body id="body">
+<div class="container">
+<audio id='audio' src="../mp3/mom.mp3"></audio>
+<script>//解决谷歌浏览器音乐不能自动播放的问题，
+function musicAutoPlay(){
+    let music = document.getElementById('audio')//获取audio
+    if (music.paused) {//判断一下paused（pused为真是禁用的）
+        music.play()//调用播放
+    }
+}
+setInterval("musicAutoPlay()", 10);//必须使用一个时间函数 ，不触发的情况下还是报错
+//</script>
+<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;">
+<br>
+<div class="panel panel-primary">
+<div class="panel-heading" style="background: linear-gradient(to right,#b221ff,#14b7ff,#8ae68a);">
+<h3 class="panel-title">Q绑查询</h3>
+</div>
+<div class="panel-body" style="text-align: center;">
+<div class="list-group">
+<div class="list-group-item list-group-item-warning" style="font-weight: bold;">
+<span>输入QQ号码即可查询密保手机，一直刷新请重进</span>
+</div>
+<div class="list-group-item list-group-item-info" style="font-weight: bold;">
+<input class="form-control" id="input" placeholder="请输入QQ">
+</div>
+<div class="list-group-item">
+<a onclick="qbang('cha')" class="btn btn-block btn-primary" style="background: linear-gradient(to right,#b221ff,#14b7ff);">查找</a>
+<br>
+</div>
+<div class="list-group-item list-group-item-warning" style="font-weight: bold;display: none;" id="jiexi_data">
+<div class="input-group">
+<span class="input-group-addon ">密保手机</span>
+<input type="text" class="form-control" placeholder="" id="mobile" readonly>
+</div>
+<div class="input-group">
+<span class="input-group-addon">号码归属地</span>
+<input type="text" class="form-control" placeholder="" id="mobileduqu" readonly>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default text-center">
+<div class="panel-body">
+©&nbsp;2022&nbsp;&nbsp;<a href="../">狗子xi</a>/<a href="../HG">HG team</a> 版权所有<br>
+<img src="https://img.alicdn.com/tfs/TB1Z.avK.z1gK0jSZLeXXb9kVXa-200-200.png" style="width:23px;"><a href="https://beian.miit.gov.cn/" style="color:black;">琼ICP备2021008334号-1</a>
+<div id="result"></div>
+</div></div></div></div>
+<script>
+function qbang($mod) {
+var qq = $('#input').val();
+if (qq == '') {
+var alert_1 = layer.msg('请输入QQ', { icon: 5 });
+} else {
+
+if($mod=='cha'){
+dialog('<div style="text-align:center"><br><b style="color:#ff4425">仅供查询自己的QQ号码<br>不是自己的请立即退出本页面<br>否则，发生的一切后果本人不负责<br><br>确认查询？？</b><br><br><a onclick='+'queren("cha")'+' class="btn btn-block btn-primary" style="background: linear-gradient(to right,#b221ff,#14b7ff);">确认</a><br></div>', 1);
+}
+}
+}
+function queren(mod) {
+console.log(mod);
+layer.close(layer.index);
+var qq = $('#input').val();
+if(mod=='cha'){
+$url = 'https://zy.xywlapi.cc/qqapi?qq='+qq;//这里是用的别人的接口doge
+}
+
+var alert_1 = layer.load(0, { shade: false });
+$.getJSON($url, function (json) {
+layer.close(alert_1);
+if (json['status'] == '200') {
+layer.msg('查询成功', { icon: 1 });
+$('#mobile').val(json['phone']);
+$('#mobileduqu').val(json['phonediqu']);
+$('#jiexi_data').css("display", "block");
+var body = document.getElementById("body");
+body.style.backgroundImage= "url('../tc/image/wife1.png')";
+//更换老婆!
+} else {
+layer.msg(json['message']);
+$('#jiexi_data').css("display", "none");
+var body = document.getElementById("body");
+body.style.backgroundImage= "url('../tc/image/wife2.png')";
+}
+}
+);
+}
+function dialog(code, exit) {
+layer.open({
+type: 1,
+skin: 'layui-layer-lan', //加上边框
+area: ['350px', ''], //宽高
+closeBtn: exit,
+shade: 0.8,
+title: '提示',
+btnAlign: 'c',
+content: code,
+});
+}
+gg()
+</script>
+
+</body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="jsons.cn">
+    <meta name="Copyright" content="jsons.cn">
+    
+    <title>Dog64在线加密解密</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="icon" href="favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <link href="css/bootstrap3.5min.css" rel="stylesheet" type="text/css">
+    <link href="css/mainmin.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="/Style/js/html5shiv.min.js"></script>
+      <script type="text/javascript" src="/Style/js/respond.min.js"></script>
+    <![endif]-->
+    
+
+</head>
+<body>
+    
+    
+<div class="navbar navbar-static-top">
+    <h2 style="color:red;float:left">爱党爱国爱人民★</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col10main">
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            
+            
+<ul class="nav nav-tabs hbflag">
+    <li role="presentation" class="active"><a href="#">Dog64编码</a></li>
+</ul>
+
+            <div class="alert alert-success alert-dismissible" role="alert">
+                Dog64在线加密、解密工具
+            </div>
+            
+            <div class="panel">
+                <form id="form1" class="form-horizontal" method="post">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <textarea onmouseover="this.focus();" id="content" name="content" class="form-control" rows="12" style="max-height: 2222px;" placeholder="请输入要加密的文本/解密的文本"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="button" onclick="base64_encode();" id="conv" value="Dog64加密&nbsp;&nbsp;" class="btn btn-success">
+                        <input type="button" onclick="base64_decode();" id="res" value="Dog64解密&nbsp;&nbsp;" class="btn btn-success">
+                        <input type="button" onclick="empty();" value="清空输入框" class="btn btn-danger">
+                        <span id="copyallcode" class="btn btn-success" data-clipboard-target="#result">复制加密结果/解密结果</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <textarea onmouseover="this.focus();" id="result" name="result" class="form-control" rows="12" style="max-height: 2222px;" placeholder="这里是加密结果/或者解密后的结果"></textarea>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        <div class="accordion-group">
+            <div id="demo1" class="in collapse bs-docs-demoexample">
+                <h4 style="color: #66be8c; margin-bottom:20px;">
+                    在线Dog64加密解密-Dog64在线加密解密工具</h4>
+                <h5>
+                    1,对字符串进行Dog64格式的加密,或者对已加密的Dog64字符进行解密显示为明文</h5>
+                <h5>
+                    2,Dog64是比较普通的在线加密算法,在解决中文乱码时,对中文进行不同方式的编码可有效避免中文乱码</h5>
+                <h5>
+                    3,本站不会记录您的任何信息,请放心使用</h5>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+<div class="copyright" id="FootLinkStr">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright © 2022
+                    <a href="/">狗子xi</a></span> | <span><a href="https://beian.miit.gov.cn/" target="_blank">琼ICP备2021008334号-1</a></span> | <span>
+                    <script src="https://s11.cnzz.com/z_stat.php?id=1261004054&amp;web_id=1261004054" language="JavaScript"></script>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="gotop" href="#" title="返回顶部" style="display: none;"><span class="arrow"></span>
+    <span class="arrow lit"></span></a>
+    
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap3.5min.js" type="text/javascript"></script>
+    <script src="js/FileSave.js" type="text/javascript"></script>
+    <script src="js/clipboard.min.js" type="text/javascript"></script>
+    <script src="js/mainjs.js" type="text/javascript"></script>
+    
+    <script src="js/core-min.js" type="text/javascript"></script>
+    <script src="js/base64csvtojson.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function base64_encode() {
+            var str = CryptoJS.enc.Utf8.parse(jQuery("#content").val());
+            var base64 = CryptoJS.enc.Base64.stringify(str);
+            jQuery("#result").val(base64);
+        }
+        function base64_decode() {
+            var words = CryptoJS.enc.Base64.parse(jQuery("#content").val());
+            jQuery("#result").val(words.toString(CryptoJS.enc.Utf8));
+        }
+        function empty() {
+            $("#content").val("");
+            $("#result").val("");
+            $("#content").select();
+        }
+    </script>
+
+
+
+</body></html>
