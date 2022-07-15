@@ -122,7 +122,8 @@
                                             </div>
                                             <div class="col-12 col-sm-8 align-self-center text-center">
                                                 <div class="m-l-10 ">
-                                                    <h5 class="mt-0 round-inner">在线视频解析！目前支持众多主流平台！<p style="color:black;">
+                                                    <h5 class="mt-0 round-inner">在线视频解析！目前支持平台：抖音/快手(维护)/哔哩哔哩/皮皮虾/火山/微视/微博/最右/instagram/皮皮搞笑/
+全民k歌/陌陌/西瓜视频<p style="color:black;">
                     <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1706328818&amp;site=qq&amp;menu=yes">by 狗子xi</a></p></h5>
                                                     <p class="mb-0 text-muted"></p>
                                                 </div>
@@ -188,7 +189,7 @@
 <!-- Alertify js -->
 <script src="https://lib.baomitu.com/alertifyjs-alertify.js/1.0.11/js/alertify.js"></script>
 <script src="https://lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script>
-<script type="text/javascript">
+<script type="https://dogxi.cn/jx/text/javascript">
 $("#Onejx").click(function() {
     var e = 0;
     var Url = $("#VideoUrl").val();
@@ -221,7 +222,7 @@ $("#Onejx").click(function() {
     $('#loading-tip').show();
     $('#jx-btn').hide();
     if (e == 0) {
-        $.post("https://www.molure.cn/douy/api.php?url=", { url: Url.trim() ,appid: appid , appsecret: appsecret}, function(data) {
+        $.post("https://tenapi.cn/video/?url=", { url: Url.trim() ,appid: appid , appsecret: appsecret}, function(data) {
             $('#loading-tip').hide();
             $('#jx-btn').show();
             if (data.code === 200) {
@@ -229,22 +230,22 @@ $("#Onejx").click(function() {
 
                 var codeHtml = "";
                 var btnHtml = "";
-                if (data.data.url) {
-                    codeHtml += '视频地址：' + data.data.url + '<br>';
-                    btnHtml += '<a href="' + data.data.url + '" target="_blank" rel="noreferrer" download="lingquan.mp4"><button style="margin-right:5px;" class="btn btn-sm btn-outline-success waves-effect waves-light">查看/下载视频</button></a>';
+                if (data.url) {
+                    codeHtml += '视频地址：' + data.url + '<br>';
+                    btnHtml += '<a href="' + data.url + '" target="_blank" rel="noreferrer" download="dogxi.cn.mp4"><button style="margin-right:5px;" class="btn btn-sm btn-outline-success waves-effect waves-light">查看/下载视频</button></a>';
                 }
-                if (data.data.cover) {
-                    codeHtml += '视频封面：' + data.data.cover + '<br>';
-                    btnHtml += '<a href="' + data.data.cover + '" target="_blank" rel="noreferrer" download="lingquan.jpg"><button class="btn btn-sm btn-outline-info waves-effect waves-light">查看/下载封面</button></a>';
+                if (data.cover) {
+                    codeHtml += '视频封面：' + data.cover + '<br>';
+                    btnHtml += '<a href="' + data.cover + '" target="_blank" rel="noreferrer" download="dogxi.cn.jpg"><button class="btn btn-sm btn-outline-info waves-effect waves-light">查看/下载封面</button></a>';
                 }
-                if (data.data.title) {
-                    codeHtml += '标题：' + data.data.title + '<br>';
+                if (data.title) {
+                    codeHtml += '标题：' + data.title + '<br>';
                 }
-                if (data.data.pics && data.data.pics.length > 0) {
+                if (data.pics && data.pics.length > 0) {
                     codeHtml += '图集：';
-                    data.data.pics.forEach(function (v, index) {
+                    data.pics.forEach(function (v, index) {
                         codeHtml += '<br>' + v;
-                        btnHtml += '<a href="' + v + '" target="_blank" rel="noreferrer" download="lingquan.jpg"><button style="margin-right:2px;margin-left:2px;" class="btn btn-sm btn-outline-info waves-effect waves-light">图集图片(' + (index + 1) + ')</button></a>';
+                        btnHtml += '<a href="' + v + '" target="_blank" rel="noreferrer" download="dogxi.cn.jpg"><button style="margin-right:2px;margin-left:2px;" class="btn btn-sm btn-outline-info waves-effect waves-light">图集图片(' + (index + 1) + ')</button></a>';
                     })
                 }
 
